@@ -1,0 +1,14 @@
+import { TextBoxComponent } from "./components/caixaDeTexto.js";
+
+document.body.innerHTML = `
+  <h1>Paulo Bibiano</h1>
+
+  ${new TextBoxComponent({
+    className: "control-3d dark",
+    placeholder: "Digite sua senha",
+    type: "password",
+    label: "Senha:",
+    
+  }).render()}
+
+`;
